@@ -1,0 +1,44 @@
+body {
+    background-image: url('fundo.jpg'); /* Define uma imagem de fundo chamada "fundo.jpg" para o corpo da página */
+    background-size: cover; /* A imagem de fundo é redimensionada para cobrir toda a tela, sem distorcer. */
+    background-position: center; /* A imagem de fundo é centralizada */
+    background-attachment: fixed; /* A imagem de fundo não rola quando você rola a página. */
+    font-family: Arial, sans-serif; /* Define a fonte padrão como Arial (ou qualquer fonte sans-serif disponível, caso Arial não dê certo) */
+    background-color: #1402b1; /* Define uma cor de fundo caso a imagem de fundo não carregue */
+    display: flex; /* Usa o modelo de layout Flexbox, permitindo uma disposição fácil dos elementos */
+    justify-content: center; /* Centraliza os itens horizontalmente dentro do contêiner flex */
+    align-items: center; /* Centraliza os itens verticalmente dentro do contêiner flex. */
+    height: 100vh; /* Define a altura do corpo para 100% da altura da janela de visualização (viewport) */
+    margin: 0; /* Remove a margem padrão da página */
+}
+
+.container {
+    background-color: white; /* Define a cor de fundo da caixa como branca */
+    padding: 20px; /* Adiciona 20px de espaço interno (margem interna) em torno do conteúdo da caixa */
+    border-radius: 8px; /* Adiciona cantos arredondados com um raio de 8px */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Aplica uma sombra sutil à caixa*/
+    width: 300px; /* Define a largura da caixa como 300px */
+}
+
+
+input[type="number"], button {
+    width: 80%;  /* Define a largura dos inputs e botões para 80% do tamanho do contêiner */ 
+    padding: 10px; /* Adiciona 10px de espaço interno (margem interna) ao redor do conteúdo do input e do botão */ 
+    margin: 10px 0; /* Adiciona uma margem de 10px acima e abaixo do input e do botão */ 
+    border-radius: 4px; /* Arredonda os cantos do input e do botão com um raio de 4px */ 
+    border: 1px solid #ccc; /* Define uma borda de 1px com uma cor cinza clara */ 
+}
+
+button {
+    background-color: #4CAF50;  /* Define a cor de fundo do botão como verde */
+    color: white; /* Define a cor do texto dentro do botão como branca */
+    cursor: pointer; /* Altera o cursor para um ponteiro (mãozinha) quando o usuário passa o mouse sobre o botão */
+}
+
+button:hover {
+    background-color: #03e60e; /* Quando o usuário passa o mouse sobre o botão, a cor de fundo muda para um verde mais claro */
+}
+
+.resultado {
+    text-align: center; /* Centraliza o texto dentro do elemento com a classe "resultado" */ 
+}

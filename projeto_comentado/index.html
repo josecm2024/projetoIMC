@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8, o que garante que caracteres especiais, como acentos e 
+    cedilhas, sejam exibidos corretamente -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Torna a página responsiva, adaptando a visualização para
+    diferentes tamanhos de tela (como dispositivos móveis) -->
+    <title>Calculadora de IMC</title> <!-- Define o título da página que aparecerá na aba do navegador -->
+    <link rel="stylesheet" href="estilos.css"> <!-- Linka o arquivo CSS "estilos.css", que será usado para dar estilo a página-->
+</head>
+<body>
+
+    <div class="container"> <!-- Cria uma seção com a classe container, que será utilizada para organizar o conteúdo visualmente -->
+        <h1>Calculadora de IMC</h1> <!-- Exibe um título principal na página -->
+        <label for="peso">Peso (kg):</label> <!-- Exibe um texto informativo sobre o campo de entrada do peso -->
+        <input type="number" id="peso" placeholder="Ex: 70" required> <!-- cria um campo onde o usuário deve digitar seu peso em quilogramas.
+        O atributo required faz com que o formulário só seja executado caso o valor seja digitado -->
+        
+        <label for="altura">Altura (m):</label> <!-- Exibe um texto informativo sobre o campo de entrada da altura -->
+        <input type="number" id="altura" step="0.01" placeholder="Ex: 1.75" required> <!-- cria um campo onde o usuário deve digitar sua altura.
+        O atributo step="0.01" permite que a altura seja inserida com até duas casas decimais.
+        O atributo required faz com que o formulário só seja executado caso o valor seja digitado -->
+        
+        <button onclick="calcularIMC()">Calcular IMC</button> <!-- Cria um botão que, quando clicado, chama a função JavaScript calcularIMC() para realizar o cálculo do IMC-->
+        
+        <div class="resultado" id="resultado"></div> <!-- Aqui será exibido o resultado. O ID 'resultado' é usado para manipulação do conteúdo via JavaScript-->
+    </div>
+
+    <script src="script.js"></script> <!-- Linka o arquivo JavaScript "script.js", que contém toda a lógica para calcular o IMC, que será executado quando o botão for pressionado-->
+
+</body>
+</html>
